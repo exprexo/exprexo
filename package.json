@@ -1,0 +1,25 @@
+{
+  "name": "exprexo",
+  "version": "1.0.0",
+  "description": "hacked javascript freshly served",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exprexo/exprexo.git"
+  },
+  "keywords": [
+    "express",
+    "exprexo",
+    "expresso",
+    "server"
+  ],
+  "author": "Alvaro Pinot <alvaro@neatnait.com> (http://github.com/alvaropinot)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/exprexo/exprexo/issues"
+  },
+  "homepage": "https://github.com/exprexo/exprexo#readme"
+}
