@@ -2,15 +2,28 @@
   "name": "exprexo",
   "version": "1.0.0",
   "description": "hacked javascript freshly served",
-  "main": "index.js",
+  "main": "lib/exprexo.js",
+  "bin": {
+    "exprexo": "bin/exprexo"
+  },
+  "preferGlobal": "true",
+  "files": [
+    "bin",
+    "lib"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/exprexo -d examples --verbose",
+    "lint": " standard --fix --verbose | snazzy",
+    "test": "npm run lint",
+    "watch": "nodemon --exec \"npm test && npm start\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/exprexo/exprexo.git"
   },
   "keywords": [
+    "cli",
+    "command",
     "express",
     "exprexo",
     "expresso",
@@ -21,5 +34,18 @@
   "bugs": {
     "url": "https://github.com/exprexo/exprexo/issues"
   },
-  "homepage": "https://github.com/exprexo/exprexo#readme"
+  "homepage": "https://github.com/exprexo/exprexo#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "corser": "^2.0.1",
+    "express": "^4.14.0",
+    "nodemon": "^1.11.0",
+    "opener": "^1.4.2",
+    "portfinder": "^1.0.9",
+    "yargs": "^6.3.0"
+  },
+  "devDependencies": {
+    "snazzy": "^5.0.0",
+    "standard": "^8.5.0"
+  }
 }
