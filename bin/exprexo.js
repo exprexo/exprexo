@@ -19,7 +19,7 @@ cli(argv)
 
 /**
  * Starts a new exprexo server given some options.
- * @param  {Object} options configurable options
+ * @param  {Object} options configurable options.
  */
 function serve (options) {
   logger.log(options)
