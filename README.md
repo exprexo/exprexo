@@ -1,21 +1,13 @@
-![noun_677349_cc.png](noun_677349_cc.png)
-
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
-
-# exprexo
-hacked javascript freshly served
-
-> exprexo and javascript make the perfect blend
 
 # exprexo - hacked javascript freshly served
 
+> exprexo and javascript make the perfect blend
 
-like http-server but...
+like `http-server` for **.js** files.
 
-Thanks
-indexzero for http-server
+# Thanks
+indexzero for the great and inspirational `http-server`
 
-
-# TODOS
-
-[ ] add ssl/https
+# Todos
+* [ ] add ssl/https
