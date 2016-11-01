@@ -45,6 +45,7 @@
     "yargs": "^6.3.0"
   },
   "devDependencies": {
+    "pug": "^2.0.0-beta6",
     "snazzy": "^5.0.0",
     "standard": "^8.5.0"
   }
