@@ -1,3 +1,6 @@
+![exprexo logo](https://cloud.githubusercontent.com/assets/6654199/19909620/caa6041a-a088-11e6-818e-f376f45ec138.png)
+
+
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
 # exprexo - hacked javascript freshly served
@@ -39,3 +42,10 @@ indexzero for the great and inspirational `http-server`
 
 # Todos
 * [ ] add ssl/https
+
+# License
+
+MIT - [@alvaropinot](http://twitter.com/alvaropinot) Alvaro Pinot
+
+Logo - Based on *Coffee*
+By *Gregor Črešnar* from the *Noun Project*
