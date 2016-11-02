@@ -12,7 +12,8 @@
     "lib"
   ],
   "scripts": {
-    "start": "node ./bin/exprexo -d examples --verbose",
+    "start": "node ./bin/exprexo examples --verbose",
+    "changelog": "generate-changelog",
     "lint": " standard --fix --verbose | snazzy",
     "test": "npm run lint",
     "watch": "nodemon --exec \"npm test && npm start\""
@@ -45,6 +46,7 @@
     "yargs": "^6.3.0"
   },
   "devDependencies": {
+    "generate-changelog": "^1.0.2",
     "pug": "^2.0.0-beta6",
     "snazzy": "^5.0.0",
     "standard": "^8.5.0"
