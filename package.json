@@ -14,7 +14,9 @@
   "scripts": {
     "start": "node ./bin/exprexo examples --verbose",
     "changelog": "generate-changelog",
-    "lint": " standard --fix --verbose | snazzy",
+    "lint": " standard --verbose | snazzy",
+    "precommit": "npm test",
+    "commitmsg": "validate-commit-msg",
     "test": "npm run lint",
     "watch": "nodemon --exec \"npm test && npm start\""
   },
@@ -47,8 +49,11 @@
   },
   "devDependencies": {
     "generate-changelog": "^1.0.2",
+    "husky": "^0.11.9",
+    "pre-commit": "^1.1.3",
     "pug": "^2.0.0-beta6",
     "snazzy": "^5.0.0",
-    "standard": "^8.5.0"
+    "standard": "^8.5.0",
+    "validate-commit-msg": "^2.8.2"
   }
 }
