@@ -45,6 +45,7 @@
     "nodemon": "^1.11.0",
     "opener": "^1.4.2",
     "portfinder": "^1.0.9",
+    "update-notifier": "^1.0.2",
     "yargs": "^6.3.0"
   },
   "devDependencies": {
