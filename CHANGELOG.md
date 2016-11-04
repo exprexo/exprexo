@@ -1,3 +1,21 @@
+#### 1.2.1 (2016-11-4)
+
+##### Chores
+
+* **ci:** add travis and codeclimate ([44a26294](https://github.com/exprexo/exprexo/commit/44a262948c7cf9ef52a574ca886e47e0fa829bcf))
+
+##### Documentation Changes
+
+* **README:** add badges and correct typos ([465b25b4](https://github.com/exprexo/exprexo/commit/465b25b461805ed37c1a9c9ff4d6a7a25b9e98f8))
+
+##### New Features
+
+* **logger:** add default argument, log fn named ([ef47e92d](https://github.com/exprexo/exprexo/commit/ef47e92d8a257e85be51bbb82691eaf53a1351ef))
+
+##### Tests
+
+* **lib:** add full test suite ([880cea2c](https://github.com/exprexo/exprexo/commit/880cea2c438ac69fbb15e9d9ed0fed213b478abb))
+
 ### 1.2.0 (2016-11-4)
 
 ##### Chores
