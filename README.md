@@ -1,11 +1,12 @@
 ![exprexo logo](https://cloud.githubusercontent.com/assets/6654199/19909620/caa6041a-a088-11e6-818e-f376f45ec138.png)
 
 
-[![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
-# exprexo - hacked javascript freshly served
 
-> exprexo and javascript make the perfect blend
+# exprexo [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/) [![Build Status](https://travis-ci.org/exprexo/exprexo.svg?branch=master)](https://travis-ci.org/exprexo/exprexo) [![Code Climate](https://codeclimate.com/github/exprexo/exprexo/badges/gpa.svg)](https://codeclimate.com/github/exprexo/exprexo) [![Test Coverage](https://codeclimate.com/github/exprexo/exprexo/badges/coverage.svg)](https://codeclimate.com/github/exprexo/exprexo/coverage) [![npm version](https://badge.fury.io/js/exprexo.svg)](https://www.npmjs.com/package/exprexo)
+
+hacked javascript freshly served
+
 
 # What is exprexo
 
@@ -22,6 +23,8 @@ Installation via `npm`:
     npm install exprexo -g
 
 This will install **exprexo** globally so that it may be run from the command line.
+
+> exprexo and javascript make the perfect blend
 
 ## Usage
 
@@ -97,7 +100,7 @@ Create a file named `get.json` that may look as follows:
 }
 ```
 
-Now run the following and open `http://localhost:9000/cool/users`
+Now run the following and browse `http://localhost:9000/cool/users`
 
 ```
 $ exprexo
@@ -149,7 +152,7 @@ $ exprexo
 ```
 
 **NOTE:** **exprexo** uses the same API as any **express** middleware.
-Define `req` and `res` as your function arguments and you are done.
+Define `req` and `res` as your function arguments and it's done.
 If you prefer a classic `return` statement **exprexo** will send that for you.
 
 
@@ -162,7 +165,7 @@ same method name.
 Want a new **POST** endpoint?
 Create a `post.json` or `post.js`, it's that easy.
 
-You cant create the following supported methods.
+You can create the following supported methods:
 
 | Method        | exprexo file name             |
 | ------------- | ----------------------------- |
