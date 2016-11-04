@@ -1,3 +1,9 @@
+#### 1.2.2 (2016-11-4)
+
+##### Documentation Changes
+
+* **README:** reorder badges ([924b7097](https://github.com/exprexo/exprexo/commit/924b7097e8e45120ae6ff032ee040022c4f1577c))
+
 #### 1.2.1 (2016-11-4)
 
 ##### Chores
