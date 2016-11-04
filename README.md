@@ -1,9 +1,8 @@
 ![exprexo logo](https://cloud.githubusercontent.com/assets/6654199/19909620/caa6041a-a088-11e6-818e-f376f45ec138.png)
 
+# exprexo
+[![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/) [![Build Status](https://travis-ci.org/exprexo/exprexo.svg?branch=master)](https://travis-ci.org/exprexo/exprexo) [![Code Climate](https://codeclimate.com/github/exprexo/exprexo/badges/gpa.svg)](https://codeclimate.com/github/exprexo/exprexo) [![Test Coverage](https://codeclimate.com/github/exprexo/exprexo/badges/coverage.svg)](https://codeclimate.com/github/exprexo/exprexo/coverage) [![npm version](https://badge.fury.io/js/exprexo.svg)](https://www.npmjs.com/package/exprexo)
 
-
-
-# exprexo [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/) [![Build Status](https://travis-ci.org/exprexo/exprexo.svg?branch=master)](https://travis-ci.org/exprexo/exprexo) [![Code Climate](https://codeclimate.com/github/exprexo/exprexo/badges/gpa.svg)](https://codeclimate.com/github/exprexo/exprexo) [![Test Coverage](https://codeclimate.com/github/exprexo/exprexo/badges/coverage.svg)](https://codeclimate.com/github/exprexo/exprexo/coverage) [![npm version](https://badge.fury.io/js/exprexo.svg)](https://www.npmjs.com/package/exprexo)
 
 hacked javascript freshly served
 
