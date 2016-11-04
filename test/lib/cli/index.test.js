@@ -124,7 +124,7 @@ test('cli: should search for a port if there is no one given', (t) => {
     })
 })
 
-test('cli : should search for a port if there is no one given and return an ' +
+test('cli: should search for a port if there is no one given and return an ' +
     'error if something goes wrong', (t) => {
   t.plan(2)
 
