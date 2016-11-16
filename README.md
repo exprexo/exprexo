@@ -8,6 +8,7 @@ hacked javascript freshly served
 
 
 # What is exprexo
+![](docs/images/quickSetup.gif)     
 
 **exprexo** is a zero-configuration command-line javascript server. Think about it like `http-server` but for dinamic **.js** files execution instead of statics.
 
