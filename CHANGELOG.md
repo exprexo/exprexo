@@ -1,3 +1,51 @@
+#### 1.2.2 (2016-11-4)
+
+##### Documentation Changes
+
+* **README:** reorder badges ([924b7097](https://github.com/exprexo/exprexo/commit/924b7097e8e45120ae6ff032ee040022c4f1577c))
+
+#### 1.2.1 (2016-11-4)
+
+##### Chores
+
+* **ci:** add travis and codeclimate ([44a26294](https://github.com/exprexo/exprexo/commit/44a262948c7cf9ef52a574ca886e47e0fa829bcf))
+
+##### Documentation Changes
+
+* **README:** add badges and correct typos ([465b25b4](https://github.com/exprexo/exprexo/commit/465b25b461805ed37c1a9c9ff4d6a7a25b9e98f8))
+
+##### New Features
+
+* **logger:** add default argument, log fn named ([ef47e92d](https://github.com/exprexo/exprexo/commit/ef47e92d8a257e85be51bbb82691eaf53a1351ef))
+
+##### Tests
+
+* **lib:** add full test suite ([880cea2c](https://github.com/exprexo/exprexo/commit/880cea2c438ac69fbb15e9d9ed0fed213b478abb))
+
+### 1.2.0 (2016-11-4)
+
+##### Chores
+
+* **scripts:** add testing scripts and deps ([7cc7a3f4](https://github.com/exprexo/exprexo/commit/7cc7a3f4b02de4cddc7fb5740853fe63033d096e))
+
+##### New Features
+
+* **cli:** harden options ([f0f3b024](https://github.com/exprexo/exprexo/commit/f0f3b02412dc296a79953d0acd2437a81fa58859))
+
+##### Bug Fixes
+
+* **getPort:** always return a promise ([a4a202fa](https://github.com/exprexo/exprexo/commit/a4a202fa300672f3bfb7efd50375dfeee23c1453))
+
+##### Tests
+
+* **cli:** new cli options test suite ([cc6a0dbb](https://github.com/exprexo/exprexo/commit/cc6a0dbb5bc436fd5e651b799cd448877e901e29))
+
+### 1.1.2 (2016-11-4)
+
+##### Documentation Changes
+
+* **README:** add get started section ([20ed0dc5](https://github.com/exprexo/exprexo/commit/20ed0dc53b5f6df2771d4243950d2928f70d5cdd))
+
 ### 1.1.0 (2016-11-2)
 
 ##### Chores
