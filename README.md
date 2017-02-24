@@ -10,7 +10,7 @@ hacked javascript freshly served
 # What is exprexo
 ![](docs/images/quickSetup.gif)     
 
-**exprexo** is a zero-configuration command-line javascript server. Think about it like `http-server` but for dinamic **.js** files execution instead of statics.
+**exprexo** is a zero-configuration command-line javascript server. Think about it like `http-server` but with dinamic **.js** files execution alongside of statics.
 
 **exprexo** allows creating mocks easily and fast. Just run **exprexo** in any folder
 containing some paths with a `get.js` file and open your browser using the same path as the url.
