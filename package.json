@@ -1,14 +1,14 @@
 {
   "name": "exprexo",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "hacked javascript freshly served",
   "main": "lib/exprexo.js",
   "bin": {
     "exprexo": "bin/exprexo"
   },
   "preferGlobal": "true",
-  "engines" : {
-    "node" : ">=6.0.0",
+  "engines": {
+    "node": ">=6.0.0",
     "npm": ">=3.8.6"
   },
   "files": [
