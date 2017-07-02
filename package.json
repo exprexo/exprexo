@@ -39,7 +39,20 @@
     "expresso",
     "server"
   ],
-  "author": "Alvaro Pinot <alvaro@neatnait.com> (http://github.com/alvaropinot)",
+  "author": {
+    "name": "Alvaro Pinot",
+    "email": "alvaro@neatnait.com",
+    "url": "http://github.com/alvaropinot",
+    "twitter": "@alvaropinot"
+  },
+  "contributors": [
+    {
+      "name": "Julio Cesar Martin",
+      "url": "http://github.com/juliomatcom",
+      "twitter": "@juliomatcom",
+      "coc-enforcer": false
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/exprexo/exprexo/issues"
