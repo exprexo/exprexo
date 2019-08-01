@@ -2,7 +2,7 @@
 
 # exprexo
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/) [![Build Status](https://travis-ci.org/exprexo/exprexo.svg?branch=master)](https://travis-ci.org/exprexo/exprexo) [![Code Climate](https://codeclimate.com/github/exprexo/exprexo/badges/gpa.svg)](https://codeclimate.com/github/exprexo/exprexo) [![Test Coverage](https://codeclimate.com/github/exprexo/exprexo/badges/coverage.svg)](https://codeclimate.com/github/exprexo/exprexo/coverage) [![npm version](https://badge.fury.io/js/exprexo.svg)](https://www.npmjs.com/package/exprexo)
-[![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 
 
 hacked javascript freshly served
@@ -201,6 +201,12 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/alvaropinot"><img src="https://avatars3.githubusercontent.com/u/6654199?v=4" width="90px;" alt="Alvaro Pinot @alvaropinot"/><br /><sub><b>Alvaro Pinot @alvaropinot</b></sub></a><br /><a href="https://github.com/exprexo/exprexo/commits?author=alvaropinot" title="Code">💻</a> <a href="https://github.com/exprexo/exprexo/commits?author=alvaropinot" title="Documentation">📖</a></td>
+  </tr>
+</table>
+
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->

@@ -9,6 +9,17 @@
   "imageSize": 90,
   "commit": true,
   "commitConvention": "angular",
-  "contributors": [],
+  "contributors": [
+    {
+      "login": "alvaropinot",
+      "name": "Alvaro Pinot @alvaropinot",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/6654199?v=4",
+      "profile": "https://github.com/alvaropinot",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    }
+  ],
   "contributorsPerLine": 7
 }
