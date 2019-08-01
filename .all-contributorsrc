@@ -1,0 +1,14 @@
+{
+  "projectName": "exprexo",
+  "projectOwner": "exprexo",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 90,
+  "commit": true,
+  "commitConvention": "angular",
+  "contributors": [],
+  "contributorsPerLine": 7
+}
