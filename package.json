@@ -18,14 +18,16 @@
   "scripts": {
     "commitmsg": "validate-commit-msg",
     "coverage": "istanbul cover tape -- test/index.test.js",
+    "contributors:add": "npx all-contributors-cli add",
+    "contributors:generate": "npx all-contributors-cli generate",
     "changelog": "generate-changelog",
     "lint": " standard --verbose | snazzy",
     "precommit": "npm test",
     "start": "node ./bin/exprexo examples --verbose",
     "tape": "tape test/**/*.test.js | faucet",
     "test": "npm run lint && npm run coverage | tap-spec",
-    "update-coc": "weallbehave -o . && git add CODE_OF_CONDUCT.md && git commit -m 'docs(coc): Update `CODE_OF_CONDUCT.md`'",
-    "update-contrib": "weallcontribute -o . && git add CONTRIBUTING.md && git commit -m 'docs(contributing): Update `CONTRIBUTING.md`'",
+    "update-coc": "npx weallbehave -o . && git add CODE_OF_CONDUCT.md && git commit -m 'docs(coc): Update `CODE_OF_CONDUCT.md`'",
+    "update-contributing": "npx weallcontribute -o . && git add CONTRIBUTING.md && git commit -m 'docs(contributing): Update `CONTRIBUTING.md`'",
     "watch": "nodemon --exec \"npm test && npm start\"",
     "watch:test": "nodemon --exec \"npm run tape\""
   },
@@ -84,8 +86,6 @@
     "standard": "^8.5.0",
     "tap-spec": "^5.0.0",
     "tape": "^4.6.2",
-    "validate-commit-msg": "^2.8.2",
-    "weallbehave": "^1.2.0",
-    "weallcontribute": "^1.0.8"
+    "validate-commit-msg": "^2.8.2"
   }
 }
