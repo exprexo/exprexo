@@ -19,13 +19,13 @@ const template = `
 
 const awesomeTemplate = pug.compile(template)
 
-module.exports = function (req, res) {
+module.exports = function(req, res) {
   const name = req.query.name
   const html = awesomeTemplate({
     name,
     awesomeText: 'You are using exprexo and pug together :D!',
     youAreUsingPug: true,
-    pageTitle: 'exprexo and pug together'
+    pageTitle: 'exprexo and pug together',
   })
 
   res.send(html)

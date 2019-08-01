@@ -3,28 +3,29 @@ const sinon = require('sinon')
 
 const loggerFactory = require('../../lib/logger')
 
-function createSpies () {
+function createSpies() {
   const spies = {
     log: sinon.spy(console, 'log'),
     info: sinon.spy(console, 'info'),
     warn: sinon.spy(console, 'warn'),
-    error: sinon.spy(console, 'error')
+    error: sinon.spy(console, 'error'),
   }
   return spies
 }
 
-function restoreSpies (spies) {
+function restoreSpies(spies) {
   return Object.keys(spies).map(key => spies[key].restore())
 }
 
-test('logger: should allow a info mode by default', (t) => {
+test('logger: should allow a info mode by default', t => {
   const spies = createSpies()
   const logger = loggerFactory()
 
   const methods = ['log', 'info', 'warn', 'error']
 
-  methods.forEach(fn => t.equal(typeof logger[fn], 'function',
-    `should have a method ${fn}`))
+  methods.forEach(fn =>
+    t.equal(typeof logger[fn], 'function', `should have a method ${fn}`)
+  )
 
   spies.log.reset()
   logger.log()
@@ -46,17 +47,18 @@ test('logger: should allow a info mode by default', (t) => {
   t.end()
 })
 
-test('logger: should allow a verbose mode', (t) => {
+test('logger: should allow a verbose mode', t => {
   const spies = createSpies()
-  const logger = loggerFactory({verbose: true})
+  const logger = loggerFactory({ verbose: true })
 
   const methods = ['log', 'info', 'warn', 'error']
 
   methods.forEach(fn => logger[fn]('foo', 'bar'))
-  methods.forEach(fn => logger[fn]({foo: 'bar'}))
+  methods.forEach(fn => logger[fn]({ foo: 'bar' }))
 
-  methods.forEach(fn => t.equal(typeof logger[fn], 'function',
-    `should have a method ${fn}`))
+  methods.forEach(fn =>
+    t.equal(typeof logger[fn], 'function', `should have a method ${fn}`)
+  )
 
   spies.log.reset()
   logger.log()
@@ -78,16 +80,17 @@ test('logger: should allow a verbose mode', (t) => {
   t.end()
 })
 
-test('logger: should allow a silent mode', (t) => {
+test('logger: should allow a silent mode', t => {
   const spies = createSpies()
-  const logger = loggerFactory({silent: true})
+  const logger = loggerFactory({ silent: true })
 
   const methods = ['log', 'info', 'warn', 'error']
 
   methods.forEach(fn => logger[fn]('foo', 'bar'))
 
-  methods.forEach(fn => t.equal(typeof logger[fn], 'function',
-    `should have a method ${fn}`))
+  methods.forEach(fn =>
+    t.equal(typeof logger[fn], 'function', `should have a method ${fn}`)
+  )
 
   spies.log.reset()
   logger.log()

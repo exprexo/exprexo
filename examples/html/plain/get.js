@@ -1,4 +1,4 @@
-module.exports = function (req, res) {
+module.exports = function(req, res) {
   const name = req.query.name
   const html = `
     <!DOCTYPE html>

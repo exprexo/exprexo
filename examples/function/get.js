@@ -1,5 +1,5 @@
-module.exports = function () {
+module.exports = function() {
   return {
-    foo: 'bar'
+    foo: 'bar',
   }
 }

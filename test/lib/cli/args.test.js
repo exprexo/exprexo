@@ -1,7 +1,7 @@
 const test = require('tape')
 const decache = require('decache')
 
-test('args: should return the following options', (t) => {
+test('args: should return the following options', t => {
   const args = require('../../../lib/cli/args')
 
   const expectedOptions = ['directory', 'open', 'port', 'silent', 'verbose']
@@ -13,7 +13,7 @@ test('args: should return the following options', (t) => {
   t.end()
 })
 
-test('args: should read `--directory` if no second args is present', (t) => {
+test('args: should read `--directory` if no second args is present', t => {
   const argv = process.argv[2]
   process.argv[2] = ''
 
@@ -30,7 +30,7 @@ test('args: should read `--directory` if no second args is present', (t) => {
   t.end()
 })
 
-test('args: should have the following defaults', (t) => {
+test('args: should have the following defaults', t => {
   decache('../../../lib/cli/args')
   const args = require('../../../lib/cli/args')
 
@@ -38,7 +38,7 @@ test('args: should have the following defaults', (t) => {
     open: false,
     port: undefined,
     silent: false,
-    verbose: false
+    verbose: false,
   }
 
   const testKey = key => t.equal(args[key], expectedDefaults[key])

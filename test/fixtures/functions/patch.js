@@ -1,5 +1,5 @@
-module.exports = function (req, res) {
+module.exports = function(req, res) {
   return {
-    foo: 'bar'
+    foo: 'bar',
   }
 }
