@@ -2,6 +2,7 @@
 
 # exprexo
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/) [![Build Status](https://travis-ci.org/exprexo/exprexo.svg?branch=master)](https://travis-ci.org/exprexo/exprexo) [![Code Climate](https://codeclimate.com/github/exprexo/exprexo/badges/gpa.svg)](https://codeclimate.com/github/exprexo/exprexo) [![Test Coverage](https://codeclimate.com/github/exprexo/exprexo/badges/coverage.svg)](https://codeclimate.com/github/exprexo/exprexo/coverage) [![npm version](https://badge.fury.io/js/exprexo.svg)](https://www.npmjs.com/package/exprexo)
+[![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
 
 
 hacked javascript freshly served
@@ -193,9 +194,23 @@ indexzero for the great and inspirational `http-server`
 # Todos
 * [ ] add ssl/https
 
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
 # License
 
 MIT - [@alvaropinot](http://twitter.com/alvaropinot) Alvaro Pinot
 
 Logo - Based on *Coffee*
 By *Gregor Črešnar* from the *Noun Project*
+
