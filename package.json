@@ -23,6 +23,7 @@
     "changelog": "generate-changelog",
     "lint": " standard --verbose | snazzy",
     "precommit": "npm test",
+    "semantic-release": "npx semantic-release",
     "start": "node ./bin/exprexo examples --verbose",
     "tape": "tape test/**/*.test.js | faucet",
     "test": "npm run lint && npm run coverage | tap-spec",
