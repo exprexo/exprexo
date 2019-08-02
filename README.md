@@ -2,8 +2,7 @@
 
 # exprexo
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/) [![Build Status](https://travis-ci.org/exprexo/exprexo.svg?branch=master)](https://travis-ci.org/exprexo/exprexo) [![Code Climate](https://codeclimate.com/github/exprexo/exprexo/badges/gpa.svg)](https://codeclimate.com/github/exprexo/exprexo) [![Test Coverage](https://codeclimate.com/github/exprexo/exprexo/badges/coverage.svg)](https://codeclimate.com/github/exprexo/exprexo/coverage) [![npm version](https://badge.fury.io/js/exprexo.svg)](https://www.npmjs.com/package/exprexo)
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 hacked javascript freshly served
 
@@ -190,6 +189,16 @@ Visit the [examples](https://github.com/exprexo/exprexo/tree/master/examples) di
 
 # Thanks
 indexzero for the great and inspirational `http-server`
+
+# Developing
+
+## Releases
+
+This tool is automatically released with [semantic-release](https://github.com/semantic-release/semantic-release) 🤖.
+
+Travis's stage `release:deploy` runs **package.json** script `npm run semantic-release` using the config file **release.config.js**.
+
+Please see **.travis.yml** for more details.
 
 # Todos
 * [ ] add ssl/https
