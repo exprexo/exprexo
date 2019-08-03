@@ -27,10 +27,10 @@ function createResponseSpies () {
     json: sinon.spy()
   }
 
-  const {send, status, json} = res
+  const { send, status, json } = res
 
   // Create specific arguments spies.
-  send.withArgs('foo').withArgs({'foo': 'bar'})
+  send.withArgs('foo').withArgs({ foo: 'bar' })
   json.withArgs({})
   status.withArgs(404).withArgs(200)
 
@@ -40,7 +40,7 @@ function createResponseSpies () {
 test('router(middleware): `options` method should return `200`',
   (t) => {
     const responseSpies = createResponseSpies()
-    const router = routerFactory({directory: './test/fixtures'})
+    const router = routerFactory({ directory: './test/fixtures' })
     const route = router.stack[0].route
     // get only the `options` method
     const stack = route.stack.filter(s => s.method === 'options')
@@ -67,37 +67,37 @@ test('router(middleware): `options` method should return `200`',
 
 test('router(middleware): all methods but `options` should return `404` when ' +
     'no file is found',
-  (t) => {
-    const responseSpies = createResponseSpies()
-    const router = routerFactory({directory: './test/fixtures'})
-    const route = router.stack[0].route
-    // remove options method
-    const stack = route.stack.filter(s => s.method !== 'options')
+(t) => {
+  const responseSpies = createResponseSpies()
+  const router = routerFactory({ directory: './test/fixtures' })
+  const route = router.stack[0].route
+  // remove options method
+  const stack = route.stack.filter(s => s.method !== 'options')
 
-    const testHandler = (handler) => {
-      const req = {
-        path: 'nonexistent/path/file'
-      }
-
-      responseSpies.status.reset()
-      handler.handle(req, responseSpies)
-
-      t.ok(responseSpies.status.withArgs(404).calledOnce,
-        `${handler.method} should return 404 for a non existent path`)
-
-      t.equal(handler.name, 'middleware',
-        'should have handler function called `middleware`')
+  const testHandler = (handler) => {
+    const req = {
+      path: 'nonexistent/path/file'
     }
 
-    stack.forEach(testHandler)
+    responseSpies.status.reset()
+    handler.handle(req, responseSpies)
 
-    t.end()
+    t.ok(responseSpies.status.withArgs(404).calledOnce,
+      `${handler.method} should return 404 for a non existent path`)
+
+    t.equal(handler.name, 'middleware',
+      'should have handler function called `middleware`')
   }
+
+  stack.forEach(testHandler)
+
+  t.end()
+}
 )
 
 function createSendTest (t, path) {
   const responseSpies = createResponseSpies()
-  const router = routerFactory({directory: './test/fixtures'})
+  const router = routerFactory({ directory: './test/fixtures' })
   const route = router.stack[0].route
   // remove options method
   const stack = route.stack.filter(s => s.method !== 'options')
@@ -110,7 +110,7 @@ function createSendTest (t, path) {
     responseSpies.send.reset()
     handler.handle(req, responseSpies)
 
-    t.ok(responseSpies.send.withArgs({'foo': 'bar'}).calledOnce,
+    t.ok(responseSpies.send.withArgs({ foo: 'bar' }).calledOnce,
       `${handler.method} should return 200 for existent paths`)
   }
 
@@ -121,15 +121,15 @@ function createSendTest (t, path) {
 
 test('router(middleware): all methods but `options` should return `200` ' +
     'for JSON files',
-  (t) => createSendTest(t, 'json-samples')
+(t) => createSendTest(t, 'json-samples')
 )
 
 test('router(middleware): all methods but `options` should return `200` ' +
     'for simple functions',
-  (t) => createSendTest(t, 'functions')
+(t) => createSendTest(t, 'functions')
 )
 
 test('router(middleware): all methods but `options` should return `200` ' +
     'for middlewares functions',
-  (t) => createSendTest(t, 'middlewares')
+(t) => createSendTest(t, 'middlewares')
 )
