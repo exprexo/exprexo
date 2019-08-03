@@ -1,3 +1,21 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# [2.0.0](https://github.com/exprexo/exprexo/compare/v1.2.3...v2.0.0) (2019-08-03)
+
+
+### Features
+
+* Add parsers as a default. ([56d3feb](https://github.com/exprexo/exprexo/commit/56d3feb))
+
+
+### BREAKING CHANGES
+
+* `req.body` will not longer be `undefined`,
+ will include a parsed json instead with the request payload.
+
 #### 1.2.2 (2016-11-4)
 
 ##### Documentation Changes

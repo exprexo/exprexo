@@ -1,6 +1,6 @@
 {
   "name": "exprexo",
-  "version": "1.2.3",
+  "version": "2.0.0",
   "description": "hacked javascript freshly served",
   "main": "lib/exprexo.js",
   "bin": {
