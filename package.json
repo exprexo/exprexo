@@ -6,7 +6,6 @@
   "bin": {
     "exprexo": "bin/exprexo"
   },
-  "preferGlobal": "true",
   "engines": {
     "node": ">=6.0.0",
     "npm": ">=3.8.6"
@@ -17,20 +16,19 @@
   ],
   "scripts": {
     "commitmsg": "validate-commit-msg",
-    "coverage": "istanbul cover tape -- test/index.test.js",
-    "contributors:add": "npx all-contributors-cli add",
-    "contributors:generate": "npx all-contributors-cli generate",
-    "changelog": "generate-changelog",
-    "lint": " standard --verbose | snazzy",
     "precommit": "npm test",
-    "semantic-release": "npx semantic-release",
+    "release:semantic-release": "npx semantic-release",
     "start": "node ./bin/exprexo examples --verbose",
-    "tape": "tape test/**/*.test.js | faucet",
-    "test": "npm run lint && npm run coverage | tap-spec",
-    "update-coc": "npx weallbehave -o . && git add CODE_OF_CONDUCT.md && git commit -m 'docs(coc): Update `CODE_OF_CONDUCT.md`'",
-    "update-contributing": "npx weallcontribute -o . && git add CONTRIBUTING.md && git commit -m 'docs(contributing): Update `CONTRIBUTING.md`'",
-    "watch": "nodemon --exec \"npm test && npm start\"",
-    "watch:test": "nodemon --exec \"npm run tape\""
+    "test:coverage": "istanbul cover tape -- test/index.test.js",
+    "test:lint": " standard --verbose | snazzy",
+    "test:runner": "tape test/**/*.test.js | faucet",
+    "test": "npm run test:lint && npm run test:coverage | tap-spec",
+    "update:coc": "npx weallbehave -o . && git add CODE_OF_CONDUCT.md && git commit -m 'docs(coc): Update `CODE_OF_CONDUCT.md`'",
+    "update:contributing": "npx weallcontribute -o . && git add CONTRIBUTING.md && git commit -m 'docs(contributing): Update `CONTRIBUTING.md`'",
+    "update:contributors:add": "npx all-contributors-cli add",
+    "update:contributors:generate": "npx all-contributors-cli generate",
+    "watch:test": "nodemon --exec \"npm run test:runner\"",
+    "watch": "nodemon --exec \"npm test && npm start\""
   },
   "repository": {
     "type": "git",
@@ -39,10 +37,15 @@
   "keywords": [
     "cli",
     "command",
+    "easy",
     "express",
-    "exprexo",
     "expresso",
-    "server"
+    "exprexo",
+    "mock",
+    "noconf",
+    "php",
+    "server",
+    "zeroconf"
   ],
   "author": {
     "name": "Alvaro Pinot",
@@ -77,7 +80,6 @@
     "@jedmao/semantic-release-npm-github-config": "^1.0.6",
     "decache": "^4.1.0",
     "faucet": "0.0.1",
-    "generate-changelog": "^1.0.2",
     "husky": "^0.11.9",
     "istanbul": "^0.4.5",
     "pre-commit": "^1.1.3",
