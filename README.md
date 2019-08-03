@@ -1,4 +1,6 @@
-![exprexo logo](https://cloud.githubusercontent.com/assets/6654199/19909620/caa6041a-a088-11e6-818e-f376f45ec138.png)
+<p align="center">
+  <img width="300" align="center" alt="exprexo" src="https://cloud.githubusercontent.com/assets/6654199/19909620/caa6041a-a088-11e6-818e-f376f45ec138.png">
+</p>
 
 # exprexo
 
@@ -21,14 +23,6 @@ Here a quick demo 👇
 
 ![Animated explanation](docs/images/quickSetup.gif)
 
-## Installing exprexo globally
-
-Installation via `npm`:
-
-    npm install exprexo -g
-
-This will install **exprexo** globally so that it may be run from the command line.
-
 ## Using exprexo with npx
 
 Alternatively you can use **exprexo** without installing it, with the help of `npx`
@@ -45,7 +39,15 @@ Install **exprexo** as a dependency
 
 or install **exprexo** with `-D` flag to save it as a `devDependency`
 
-    npm install -D exprexo
+    npm install -D exprexo   # same as npm install --save-dev
+
+## Installing exprexo globally
+
+Installation via `npm`:
+
+    npm install exprexo -g
+
+This will install **exprexo** globally so that it may be run from the command line as `exprexo`.
 
 ## Usage
 
@@ -137,7 +139,8 @@ module.exports = {
 }
 ```
 
-**NOTE:** **exprexo** will try to serve at first **\*.js** files, then **\*.json**.
+**NOTE:** **exprexo** will try to serve at first **\*.js** files, then
+**\*.json**.
 
 ### Read query params
 
@@ -161,8 +164,9 @@ $ exprexo
 ```
 
 **NOTE:** **exprexo** uses the same API as any **express** middleware.
-Define `req` and `res` as your function arguments and you are done.
-If you prefer a classic `return` statement **exprexo** can handle that for you too.
+
+Define `req` and `res` as your function arguments and it's done.
+If you prefer a classic `return` statement **exprexo** will send that for you.
 
 ### What about POST, PUT, PATCH and DELETE?
 
@@ -197,6 +201,32 @@ indexzero for the great and inspirational `http-server`
 
 # Developing
 
+## Getting started
+
+Clone or fork this repository.
+
+Install dependencies with `npm install`.
+
+Start developing with `npm start` or `npm run watch` if yo want livereload. If TDD is your thing run `npm run watch:test`.
+
+## Style
+
+**exprexo** uses [standardjs](https://standardjs.com) code style. Code will be tested, including linting before precommit with [husky](https://github.com/typicode/husky) git hooks to avoid unnecesary amends and pushes.
+
+## Testing
+
+`npm test` will run the linter, coverage and the test suite.
+
+While developing, the test runner can be run in watch mode by executing:
+
+`npm run watch:test`
+
+Other usefull testing scripts:
+
+- `npm run test:coverage`
+- `npm run test:lint`
+- `npm run test:runner`
+
 ## Releases
 
 This tool is automatically released with [semantic-release](https://github.com/semantic-release/semantic-release) 🤖.
@@ -204,6 +234,8 @@ This tool is automatically released with [semantic-release](https://github.com/s
 Travis's stage `release:deploy` runs **package.json** script `npm run semantic-release` using the config file **release.config.js**.
 
 Please see **.travis.yml** for more details.
+
+Dry runs can be executed using the script `npm run release:semantic-release`.
 
 # Todos
 
@@ -226,6 +258,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
