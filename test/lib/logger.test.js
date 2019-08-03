@@ -48,12 +48,12 @@ test('logger: should allow a info mode by default', (t) => {
 
 test('logger: should allow a verbose mode', (t) => {
   const spies = createSpies()
-  const logger = loggerFactory({verbose: true})
+  const logger = loggerFactory({ verbose: true })
 
   const methods = ['log', 'info', 'warn', 'error']
 
   methods.forEach(fn => logger[fn]('foo', 'bar'))
-  methods.forEach(fn => logger[fn]({foo: 'bar'}))
+  methods.forEach(fn => logger[fn]({ foo: 'bar' }))
 
   methods.forEach(fn => t.equal(typeof logger[fn], 'function',
     `should have a method ${fn}`))
@@ -80,7 +80,7 @@ test('logger: should allow a verbose mode', (t) => {
 
 test('logger: should allow a silent mode', (t) => {
   const spies = createSpies()
-  const logger = loggerFactory({silent: true})
+  const logger = loggerFactory({ silent: true })
 
   const methods = ['log', 'info', 'warn', 'error']
 
