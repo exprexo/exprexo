@@ -251,14 +251,13 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/alvaropinot"><img src="https://avatars3.githubusercontent.com/u/6654199?v=4" width="90px;" alt="Alvaro Pinot @alvaropinot"/><br /><sub><b>Alvaro Pinot @alvaropinot</b></sub></a><br /><a href="https://github.com/exprexo/exprexo/commits?author=alvaropinot" title="Code">💻</a> <a href="https://github.com/exprexo/exprexo/commits?author=alvaropinot" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/leireNN"><img src="https://avatars3.githubusercontent.com/u/6873829?v=4" width="90px;" alt="Leire Polo"/><br /><sub><b>Leire Polo</b></sub></a><br /><a href="https://github.com/exprexo/exprexo/commits?author=leireNN" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/leireNN"><img src="https://avatars3.githubusercontent.com/u/6873829?v=4" width="90px;" alt="Leire Polo"/><br /><sub><b>Leire Polo</b></sub></a><br /><a href="https://github.com/exprexo/exprexo/commits?author=leireNN" title="Documentation">📖</a> <a href="#review-leireNN" title="Reviewed Pull Requests">👀</a></td>
     <td align="center"><a href="https://juliocesar.space/"><img src="https://avatars1.githubusercontent.com/u/8549955?v=4" width="90px;" alt="J.C. Martin"/><br /><sub><b>J.C. Martin</b></sub></a><br /><a href="https://github.com/exprexo/exprexo/commits?author=juliomatcom" title="Documentation">📖</a></td>
   </tr>
 </table>
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
