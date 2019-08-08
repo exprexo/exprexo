@@ -13,6 +13,7 @@ test('cli: should return only the following options', (t) => {
     port: 9000,
     silent: false,
     verbose: false,
+    watch: false,
     foo: 'foo', // this one should be removed
     bar: 'bar', // this one should be removed
     biz: 'biz' // this one should be removed
@@ -22,7 +23,8 @@ test('cli: should return only the following options', (t) => {
     open: true,
     port: 9000,
     silent: false,
-    verbose: false
+    verbose: false,
+    watch: false
   }
 
   cli(desiredOptions)
