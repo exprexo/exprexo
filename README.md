@@ -61,6 +61,8 @@ Usage: exprexo [path] [options]
 Mode
   --silent, -s  Make this exprexo in silence          [boolean] [default: false]
   --verbose     Make this exprexo loud as hell        [boolean] [default: false]
+  --watch, -w   Make this exprexo double charge an    [boolean] [default: false]
+                checking your directory for changes 
 
 Options:
   --directory, -d  A cool directory to be served           [default: "./routes"]
