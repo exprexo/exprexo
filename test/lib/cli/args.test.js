@@ -36,7 +36,7 @@ test('args: should have the following defaults', (t) => {
 
   const expectedDefaults = {
     open: false,
-    port: undefined,
+    port: null,
     silent: false,
     verbose: false
   }
