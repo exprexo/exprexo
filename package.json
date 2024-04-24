@@ -83,7 +83,7 @@
     "husky": "^0.11.9",
     "istanbul": "^0.4.5",
     "pre-commit": "^1.1.3",
-    "pug": "^2.0.0-beta6",
+    "pug": "^3.0.1",
     "require-all": "^2.0.0",
     "sinon": "^1.17.6",
     "snazzy": "^5.0.0",
