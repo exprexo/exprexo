@@ -73,7 +73,7 @@
     "nodemon": "^3.1.0",
     "opener": "^1.4.2",
     "portfinder": "^1.0.9",
-    "update-notifier": "^1.0.2",
+    "update-notifier": "^7.0.0",
     "yargs": "^17.7.2"
   },
   "devDependencies": {
